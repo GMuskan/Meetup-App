@@ -1,0 +1,164 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* background-color: rgb(236, 232, 232); */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.home-container nav h1 {
+  color: red;
+  font-family: cursive;
+}
+
+.home-container nav input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 12px;
+  position: relative;
+  top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header select {
+  height: 24px;
+  padding: 0.2rem;
+  position: relative;
+  top: 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.meetups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.meetup-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.meetup-card .event-details {
+  padding: 0.1rem;
+}
+.meetup-card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.meetup-card .event-title {
+  font-weight: bold;
+}
+
+.modal-wrapper {
+  background: #342e2ebf;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  z-index: 8888;
+  left: 0;
+}
+
+.modal {
+  padding: 1rem 2rem;
+  background-color: white;
+  max-width: fit-content;
+  position: relative;
+  margin: auto;
+  top: 8rem;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.modal-input {
+  padding: 1rem;
+}
+
+.modal-input input {
+  margin-top: 0.5rem;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.modal button {
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.speaker-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-card img {
+  width: 40%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.event-details-page {
+  display: flex;
+  text-align: left;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.event-details-page .event-image img {
+  width: 60%;
+}
+
+.timings-venue-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 1rem;
+}
